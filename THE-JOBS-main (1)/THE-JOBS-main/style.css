@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #000000, #4b00ff);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  color: #4b60ff;
+}
+
+.link ul {
+  margin-bottom:300px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  
+}
+
+.link ul li a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  color: #555;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.services {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-btn {
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.service-btn:hover {
+  transform: scale(1.05);
+}
+
+.headset-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.logo-center {
+  margin: 30px 0;
+  position: center;
+}
+
+.logo-center img {
+  padding-bottom: 200px;
+  width: 500px; /* ou ajuste para o tamanho que quiser */
+  opacity: 0.15; /* Deixa a logo bem transparente */
+  display: block;
+  margin: 0 auto;
+}
