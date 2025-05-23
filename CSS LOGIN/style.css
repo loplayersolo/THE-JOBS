@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(to right, #060310, #3a1fe6);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .user-icon i {
+    font-size: 120px;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #2a63e3, #000000);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .login-form input::placeholder {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #2a63e3, #000000);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.03);
+  }
+  .register-btn {
+    margin-top: 10px; /* Ajuste o espaçamento superior */
+    background: linear-gradient(to right, #41a2f8, #000000); /* Gradiente específico */
+    color: white; /* Cor do texto */
+  }
+  
+  .no-access {
+    color: white;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 50px; /* Adicione espaçamento inferior */
+  font-weight: bold;
+  }
+  
+  .register {
+    font-size: 1.2rem;
+  }
+  
+  .bottom-btn {
+    margin-top: 40px;
+    background: linear-gradient(to right, #41a2f8, #000000);
+    color: black;
+    font-weight: bold;
+  }
+  
+  .support-icon {
+    position: absolute;
+    bottom: 20px;
+    right: -70px;
+    font-size: 48px;
+    color: white;
+  }
+  #home-button-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100; /* maior que outros elementos */
+  /* Opcional: ajuste para telas pequenas */
+}
+
+.home-button {
+  background: linear-gradient(to right, #82caff, #0e215d);
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  font-size: 1.1rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: linear-gradient(to right, #0e215d, #82caff);
+  color: #0e215d;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.28);
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+  #home-button-wrapper {
+    top: 10px;
+    left: 10px;
+  }
+  .home-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+  
+  

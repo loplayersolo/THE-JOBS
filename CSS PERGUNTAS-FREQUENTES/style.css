@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #0b0820, #3d0df2);
+  color: white;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.titulo {
+  text-align: center;
+  background: linear-gradient(to right, #82caff, #0e215d);
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  border: 2px solid white;
+  margin-bottom: 40px;
+}
+
+.grid-faq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: linear-gradient(to right, #0e215d, #0d1a35);
+  border-left: 8px solid #39aaff;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.card.full-width {
+  grid-column: 1 / -1;
+}
+
+.support-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.support-icon img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 0 6px white);
+}
+/* ...existing code... */
+
+/* Remova as duplicatas e mantenha apenas uma versão: */
+#home-button-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100; /* maior que outros elementos */
+  /* Opcional: ajuste para telas pequenas */
+}
+
+.home-button {
+  background: linear-gradient(to right, #82caff, #0e215d);
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  font-size: 1.1rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: linear-gradient(to right, #0e215d, #82caff);
+  color: #0e215d;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.28);
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+  #home-button-wrapper {
+    top: 10px;
+    left: 10px;
+  }
+  .home-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+/* ...existing code... */

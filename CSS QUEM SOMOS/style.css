@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to right, #060310, #3a1fe6);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    background: linear-gradient(to right, #2a63e3, #000000);
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    cursor: default;
+  }
+  
+  .texto {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .destaque {
+    color: #7e7dfb;
+  }
+  #home-button-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100; /* maior que outros elementos */
+  /* Opcional: ajuste para telas pequenas */
+}
+
+.home-button {
+  background: linear-gradient(to right, #82caff, #0e215d);
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  font-size: 1.1rem;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: linear-gradient(to right, #0e215d, #82caff);
+  color: #0e215d;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.28);
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+  #home-button-wrapper {
+    top: 10px;
+    left: 10px;
+  }
+  .home-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+  
+  
